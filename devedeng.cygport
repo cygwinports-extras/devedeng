@@ -1,0 +1,17 @@
+inherit python3-distutils
+
+NAME="devedeng"
+VERSION=4.8.8
+RELEASE=1
+CATEGORY="Video"
+SUMMARY="Creates DVD-Videos from other video formats"
+DESCRIPTION="DeVeDe is a program to create video DVDs and CDs (VCD, sVCD or
+CVD), suitables for home players, from any number of video files, in any of
+the formats supported by Mplayer."
+HOMEPAGE="http://www.rastersoft.com/programas/devede.html"
+SRC_URI="https://github.com/rastersoft/devedeng/archive/${VERSION}/devedeng-${VERSION}.tar.gz"
+
+ARCH=noarch
+
+OBSOLETES="devede"
+REQUIRES="girepository-Gtk3.0 dvdauthor ffmpeg genisoimage libiconv mplayer vcdimager"
